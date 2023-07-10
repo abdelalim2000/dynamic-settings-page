@@ -1,10 +1,10 @@
 <x-filament::page>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ config('filament-dynamic-settings-page.assets.jquery-ui-css') }}">
+    <link href="{{ config('filament-dynamic-settings-page.assets.select2-min-css') }}" rel="stylesheet" />
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="{{ config('filament-dynamic-settings-page.assets.jquery') }}"></script>
+    <script src="{{ config('filament-dynamic-settings-page.assets.jquery-ui-js') }}"></script>
+    <script src="{{ config('filament-dynamic-settings-page.assets.select2-min-js') }}"></script>
 
     <style>
         .select2 .select2-container {
